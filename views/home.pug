@@ -1,0 +1,165 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous')
+  style.
+    @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Playfair Display", serif;
+    }
+
+    p,
+    a {
+      font-family: "Source Sans Pro", sans-serif;
+      color: white;
+    }
+
+    /* Generic styles */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .link-product {
+      background-color: goldenrod;
+      text-decoration: none;
+      color: white;
+      border-radius: 0.25rem;
+      text-align: center;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+
+    .link-product a:hover {
+      opacity: 0.6;
+    }
+
+    /* Styles for the hero image */
+    .hero {
+      /* Photo by mnm.all on Unsplash */
+      background: url(public/img/brushing.jpg)
+        center;
+      background-size: cover;
+      padding: 15rem 1rem;
+      /* grid styles */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      align-items: center;
+    }
+
+    .hero > * {
+      color: white;
+    }
+
+    .hero > h1 {
+      font-size: 4rem;
+      padding-bottom: 1rem;
+    }
+
+    .hero > article > p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .hero > article > a {
+      padding: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    /* breweries styles */
+    .breweries {
+      padding: 2rem;
+    }
+
+    .breweries > ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 1rem;
+      list-style-type: none;
+    }
+
+    .breweries > ul > li {
+      border: 1px solid #e2e2e2;
+      border-radius: 0.5rem;
+    }
+
+    .breweries > ul > li > figure {
+      max-height: 220px;
+      overflow: hidden;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      position: relative;
+    }
+
+    .breweries > ul > li > figure > img {
+      width: 100%;
+    }
+
+    .breweries > ul > li > figure > figcaption {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+    }
+
+    .breweries > ul > li > figure > figcaption > h3 {
+      color: white;
+      padding: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    .breweries > ul > li > p {
+      font-size: 1rem;
+      line-height: 1.5;
+      padding: 1rem 0.75rem;
+      color: #666666;
+    }
+
+    .breweries > ul > li > a {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+    }
+    .title-product {
+      //- opacity: 0.5;
+      color: white;
+      font-weight: bold;
+    }
+    .title-side {
+      color: white;
+      font-weight: bold;
+    }
+  title Schedule Server Json
+body
+  main.wrapper
+    section.hero
+      h1.title-product NODE JS SERVER
+      article
+        //- p.title-side Didirikan pada tahun 1989, PT. Mewah Niagajaya adalah perusahaan profesional jasa maklon yang bergerak dibidang pencelupan kain dan finishing. Kami memiliki keahlian dalam semua jenis kain yang meliputi: jersey, rib, fleece, interlock, terry, mesh dan pique. Kami juga menangani berbagai jenis serat seperti katun dan campuran katun, poliester, nilon, spandex, dan acrylic.
+        //- a.link-product(href='http://localhost/schedule-timeline-prod/') Browse
+    section#breweries.breweries
+      ul
+        li
+          figure
+            img(src='public/img/dyeing.jpg' alt='server')
+            figcaption
+          p
+            | Schedule time line guests
+        li
+          figure
+            img(src='public/img/1.png' alt='server')
+            figcaption
+          p
+            | Schedule time line guests
+        li
+          figure
+            img(src='public/img/finishing.jpg' alt='server')
+            figcaption
+          p
+            | Schedule time line guests

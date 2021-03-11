@@ -1,0 +1,36 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  style.
+      .center-screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      }
+  script(src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous")
+  title Schedule Server Json
+body
+  .center-screen
+    | Server Error Check Logs ./logs/ ..  !!
+script(type="text/javascript").
+  //- $(document).ready(function() {
+  //- //- let timerId = setInterval(function(){
+  //- //- window.location.reload();
+  //- //- console.log('run')
+  //- //- }, 1000*60*1)
+  //- //- // after 5 seconds stop
+  //- //- setTimeout(() => { clearInterval(timerId); location.reload(); console.log('stop') }, 1000*60);
+  //- })
+  setTimeout(function(){ location.reload(); }, 1000*60*1);
+//-  window.onload = function() {
+//-  if(!window.location.hash) {
+//-  window.location.reload();
+//-  }
+//-  }
+//-   setTimeout(function(){ location.reload(); }, 1000*60*1);
+

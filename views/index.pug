@@ -1,0 +1,35 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  style.
+      .center-screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      },
+      #menu{
+      display:inline
+      }
+  title Schedule Server Json
+body
+  .center-screen
+    h1 Schedule Server For Users
+    #container.col
+      p Note : 
+      p If Error Check &apos;/.logs/log&apos;
+    
+    #menu
+    ul
+      li
+        a(href="http://192.168.0.94:4000/schedulesjson") Schedule Json
+      li
+        a(href="http://192.168.0.94:4000/machinesjson") Machine Json
+
+script(type="text/javascript").
+  setTimeout(function(){ location.reload(); }, 1000*60*1);
+

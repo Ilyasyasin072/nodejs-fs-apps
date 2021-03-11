@@ -1,0 +1,33 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@riversun/simple-date-format": "^1.1.5",
+    "body-parser": "^1.19.0",
+    "connect-livereload": "^0.6.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dateformat": "^4.5.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "i": "^0.3.6",
+    "livereload": "^0.9.1",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "node-firebird": "^0.9.9",
+    "pug": "^3.0.0",
+    "reload": "^3.1.1",
+    "simple-autoreload-server": "^0.2.7",
+    "socket.io": "^3.1.1",
+    "timeout-refresh": "^1.0.3"
+  }
+}
